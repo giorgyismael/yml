@@ -1,0 +1,33 @@
+server:
+  application:
+    name: InjectMapFromYAML
+    url: http://injectmapfromyaml.dev
+    description: How To Inject a map from a YAML File in Spring Boot
+  config:
+    ips:
+      - 10.10.10.10
+      - 10.10.10.11
+      - 10.10.10.12
+      - 10.10.10.13
+    filesystem: [/dev/root, /dev/md2, /dev/md4]
+  users:
+    root:
+      username: user01
+      password: 1234abcd
+      description: >
+        The user is very important to the company, 
+        but he doesn't follow our rules, attention please.
+    guest: {username: "user02",
+            password: 1234,
+            description: "The user is good, he follow our rules."}
+
+person:
+  name: user03
+  gender: MALE
+  birth-days: '1978-10-06'
+  hobby:
+    - ride a bike
+    - studying
+    - develop
+
+person.name:
